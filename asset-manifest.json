@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/recepietask/static/css/main.31d6cfe0.css",
+    "main.js": "/recepietask/static/js/main.1328fe26.js",
+    "index.html": "/recepietask/index.html",
+    "main.1328fe26.js.map": "/recepietask/static/js/main.1328fe26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.1328fe26.js"
+  ]
+}
