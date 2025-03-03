@@ -2,10 +2,7 @@ import { useQueryClient } from "@tanstack/react-query";
 
 const SELECTED_KEY = "selectedMealsIds";
 
-/**
- * Хук для работы с выбранными рецептами.
- * Хранит список ID выбранных рецептов в кэше React Query.
- */
+
 export function useSelectedMeals() {
     const queryClient = useQueryClient();
 

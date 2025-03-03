@@ -15,7 +15,7 @@ function RecipePage() {
         queryFn: () => fetchMealById(id!),
         enabled: !!id,
     });
-
+    //loading
     if (isLoading) return <p>Загрузка...</p>;
     if (error || !meal) return <p>Ошибка или рецепт не найден</p>;
 

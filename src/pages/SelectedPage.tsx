@@ -6,7 +6,6 @@ import { Meal } from "../types/meal";
 function SelectedPage() {
     const { selectedIds } = useSelectedMeals();
 
-    // Делаем параллельные запросы по каждому ID
     const results = useQueries({
         queries: selectedIds.map((id) => ({
         queryKey: ["selectedMeal", id],
@@ -14,12 +13,12 @@ function SelectedPage() {
         })),
     });
 
-    // Собираем данные
+
     const meals: Meal[] = results
         .map((r) => r.data)
         .filter((m): m is Meal => m !== null && m !== undefined);
 
-    // Подсчёт ингредиентов
+
     const ingredientsMap: Record<string, number> = {};
     meals.forEach((meal) => {
         for (let i = 1; i <= 20; i++) {

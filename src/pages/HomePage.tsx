@@ -15,7 +15,6 @@ function HomePage() {
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [currentPage, setCurrentPage] = useState(1);
 
-    // Загрузка всех рецептов (для фронтенд-фильтрации и пагинации)
     const {
         data: allMeals = [],
         isLoading: allMealsLoading,
@@ -25,7 +24,6 @@ function HomePage() {
         queryFn: fetchAllMeals,
     });
 
-    // Загрузка рецептов по поиску (API), если есть строка поиска
     const {
         data: searchMeals = [],
         isLoading: searchLoading,

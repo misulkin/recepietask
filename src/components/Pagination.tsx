@@ -24,7 +24,6 @@ interface PaginationProps {
         }
     };
 
-    // Формируем список страниц
     let pages: (number | string)[] = [];
     if (totalPages <= 10) {
         for (let i = 1; i <= totalPages; i++) {
